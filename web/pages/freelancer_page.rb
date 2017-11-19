@@ -1,4 +1,4 @@
-class DemoAppPage < Howitzer::Web::Page
+class FreelancerPage < Howitzer::Web::Page
   section :main_menu
   # section :flash
   # section :errors

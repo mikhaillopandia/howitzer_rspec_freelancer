@@ -1,7 +1,6 @@
-require_relative 'demo_app_page'
+require_relative 'freelancer_page'
 
-class SkillsPage < DemoAppPage
+class SkillsPage < FreelancerPage
   path '/sellers/skill-select.php'
-  validate :title, /\AFreelancer | Online Jobs | Freelance Employment | Outsourcing Services | Programmers | Web Design | Freelancers\z/
   validate :url, %r{/sellers/skill-select.php/?\z}
 end

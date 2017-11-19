@@ -1,10 +1,10 @@
 class InviteIdProcessor
   class << self
-    def validate(name, value)
+    def validate(_name, _value)
       true
     end
 
-    def transform(name, value)
+    def transform(_name, value)
       value
     end
   end

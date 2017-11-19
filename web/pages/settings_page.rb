@@ -1,7 +1,6 @@
-require_relative 'demo_app_page'
+require_relative 'freelancer_page'
 
-class SettingsPage < DemoAppPage
+class SettingsPage < FreelancerPage
   path '/users/settings.php'
-  # validate :title, /\AFreelancer | Online Jobs | Freelance Employment | Outsourcing Services | Programmers | Web Design | Freelancers\z/
   validate :url, %r{/users/settings.php\?.+/?\z}
 end

@@ -9,7 +9,7 @@
  app_test_user: milotest@milotest.com
  app_test_pass: milotest1
  app_test_user_name: milotest
- app_test_user_looking_for_work_radio: work
+ app_test_user_looking_for: work
 
  app_api_token:
  app_api_end_point: "api/v1"

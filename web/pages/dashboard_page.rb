@@ -1,6 +1,5 @@
-require_relative 'demo_app_page'
-class DashboardPage < DemoAppPage
+require_relative 'freelancer_page'
+class DashboardPage < FreelancerPage
   path '/'
-  validate :title, /\AFreelancer | Online Jobs | Freelance Employment | Outsourcing Services | Programmers | Web Design | Freelancers\z/
   validate :url, %r{dashboard/?\z}
 end

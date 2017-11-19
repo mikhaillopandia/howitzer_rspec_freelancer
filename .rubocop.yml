@@ -33,3 +33,10 @@ Style/FrozenStringLiteralComment:
 
 Metrics/ModuleLength:
   Max: 150
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/IndentArray:
+  Exclude:
+    - 'tasks/rspec.rake'

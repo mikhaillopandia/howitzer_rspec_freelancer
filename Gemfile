@@ -9,13 +9,13 @@ gem 'howitzer'
 # Uncomment it if you are going to use 'poltergeist' driver. PhantomJS should be installed.
 # See https://github.com/jnicklas/capybara#poltergeist
 # gem 'poltergeist', git: 'https://github.com/teampoltergeist/poltergeist.git', branch: :master
-gem 'rest-client'
-gem 'repeater'
-gem 'factory_girl'
 gem 'capybara-screenshot'
+gem 'factory_girl'
+gem 'repeater'
+gem 'rest-client'
 
 gem 'rspec', '~>3.2'
 
-gem 'rubocop'
 gem 'pry'
 gem 'pry-byebug'
+gem 'rubocop'

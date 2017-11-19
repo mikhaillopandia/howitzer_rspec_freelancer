@@ -11,7 +11,6 @@ class ConfirmationInstructionEmail < Howitzer::Email
   def confirmation_link
     res = plain_text_body[/Verify Your Email \((.+?)\)/, 1]
     Howitzer::Log.info('Confirmation link was not found') if res.nil?
-    puts res
     res
   end
 
