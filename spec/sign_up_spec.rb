@@ -25,7 +25,7 @@ feature 'Sign Up', smoke: true do
     VerifyPage.on { main_menu_section.choose_menu('Logo') }
     expect(JobsPage).to be_displayed
     DashboardPage.open
-    DashboardPage.on { is_expected.to have_main_menu_section }
+    DashboardPage.on { is_expected.to have_no_main_menu_section }
   end
 
   scenario 'User can sign up with correct credentials as employer' do
@@ -45,7 +45,7 @@ feature 'Sign Up', smoke: true do
     end
     expect(DashboardPage).to be_displayed
     DashboardPage.open
-    DashboardPage.on { is_expected.to have_main_menu_section }
+    DashboardPage.on { is_expected.to have_no_main_menu_section }
   end
 
   scenario 'User can not sign up with blank data', p1: true do

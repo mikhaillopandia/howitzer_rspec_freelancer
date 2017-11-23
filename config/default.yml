@@ -7,7 +7,7 @@
  app_host: freelancer.co.uk
 
  app_test_user: milotest@milotest.com
- app_test_pass: milotest1
+ app_test_pass: milotes1
  app_test_user_name: milotest
  app_test_user_looking_for: work
 
@@ -18,11 +18,12 @@
 ###########################################################
 # TEST ENVIRONMENTS SETTINGS                              #
 ###########################################################
+ user_agent: # if blank, then default agent
  page_load_idle_timeout: 20
  maximized_window: true # Specify maximized browser window size
 
  # Specify one of the following drivers: selenium, selenium_grid, webkit, poltergeist, phantomjs, sauce,
- # testingbot, browserstack, headless_chrome
+ # testingbot, browserstack, crossbrowsertesting, headless_chrome
  driver: selenium
 
  # -Selenium-
@@ -31,7 +32,7 @@
 
  # -Headless Chrome-
  # List of available flags (http://peter.sh/experiments/chromium-command-line-switches/)
- headless_chrome_flags: "--window-size=1920x1080, --disable-gpu"
+ headless_chrome_flags: "window-size=1920x1080, disable-gpu"
 
  # -Selenium Grid-
  selenium_hub_url: "http://example.com:4444/wd/hub"
@@ -69,6 +70,14 @@
  cloud_bstack_build: 'v1'
  cloud_bstack_mobile_device:
 
+ # -CrossBrowserTesting (https://app.crossbrowsertesting.com/selenium/run)
+ cloud_cbt_name: 'Howitzer Example'
+ cloud_cbt_build: '1.0'
+ cloud_cbt_os_api_name: 'Win7x64-C1'
+ cloud_cbt_screen_resolution: '1024x768'
+ cloud_cbt_record_video: 'true'
+ cloud_cbt_record_network: 'true'
+
 ###########################################################
 # CAPYBARA SETTINGS                                       #
 ###########################################################
@@ -89,8 +98,16 @@
 ###########################################################
  mail_adapter: mailgun
  mail_wait_time: 60
+ mail_sleep_time: 3
 
 # -Mailgun- (http://www.mailgun.com/)
  mailgun_key: key-48777bdd8b7c7e9ac8deb97255bb72f6
  mailgun_domain: sandbox2d909d34fb574269af7f43922051a40d.mailgun.org
- mailgun_sleep_time: 3
+
+ # -Mailtrap- (https://mailtrap.io/)
+ mailtrap_api_token: private_api_key
+ mailtrap_inbox_id: inbox_id
+
+# -Gmail-
+ gmail_login: gmail_address
+ gmail_password: gmail_password

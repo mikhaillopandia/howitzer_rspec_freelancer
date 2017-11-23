@@ -11,7 +11,7 @@ RSpec.configure do |config|
   Howitzer::Cache.store(:cloud, :start_time, Time.now.utc)
   Howitzer::Cache.store(:cloud, :status, true)
 
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
   # config.disable_monkey_patching!
   config.color = true
