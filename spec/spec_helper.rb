@@ -13,7 +13,7 @@ RSpec.configure do |config|
 
   config.include FactoryBot::Syntax::Methods
 
-  config.disable_monkey_patching = true
+  config.disable_monkey_patching!
   config.color = true
   config.wait_timeout = Howitzer.rspec_wait_timeout
 
